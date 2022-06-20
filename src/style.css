@@ -1,0 +1,159 @@
+:root {
+  --blue: #005595;
+  --yellow: #ffce00;
+  --grey: #58585b;
+  --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --border-hover: 0.1rem solid var(--grey);
+  --box-shadow: 0 0.5rem 1 rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  text-transform: capitalize;
+  border: none;
+  text-decoration: none;
+  outline: none;
+}
+
+html {
+  font-size: 20px;
+  overflow-x: hidden;
+  scroll-padding-top: 5rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 300rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--grey);
+}
+
+.header .main-heading {
+  background: white;
+  padding: 30px 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .main-heading .main-logo {
+  font-size: 30px;
+  font-weight: bolder;
+  color: var(--yellow);
+}
+
+.header .main-heading .main-logo i {
+  color: var(--blue);
+}
+
+.header .main-heading .search-form {
+  width: 750px;
+  height: 60px;
+  border: var(--border);
+  overflow: hidden;
+  background: white;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.header .main-heading .search-form input {
+  font-size: 20px;
+  padding: 0 18px;
+  height: 100%;
+  width: 100%;
+  text-transform: none;
+  color: var(--grey);
+}
+
+.header .main-heading .search-form label {
+  font-size: 30px;
+  padding-right: 20px;
+  color: var(--grey);
+  cursor: pointer;
+}
+
+.header .main-heading .search-form label:hover {
+  color: var(--blue);
+  transform: scale(1.1);
+}
+
+.header .main-heading .icons div,
+.header .main-heading .icons a {
+  font-size: 30px;
+  margin-left: 20px;
+  color: var(--grey);
+  cursor: pointer;
+}
+
+.header .main-heading .icons div:hover,
+.header .main-heading .icons a:hover {
+  color: var(--blue);
+  transform: scale(1.1);
+}
+
+#search-button {
+  display: none;
+}
+
+.header .second-header {
+  background: var(--blue);
+}
+
+.header .second-header .nav-bar {
+  text-align: center;
+}
+
+.header .second-header .nav-bar a {
+  color: white;
+  display: inline-block;
+  padding: 15px;
+  font-size: 25px;
+}
+
+.header .second-header.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header .second-header .nav-bar a:hover {
+  background: var(--grey);
+}
+
+.bottom-nav-bar {
+  text-align: center;
+  background: var(--blue);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: none;
+}
+
+.bottom-nav-bar a {
+  font-size: 35px;
+  padding: 15px;
+  color: white;
+}
+
+.bottom-nav-bar a:hover {
+  transform: scale(1.1);
+  /* color: var(--grey); */
+}
