@@ -25,9 +25,9 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+/* body {
   height: 300rem;
-}
+} */
 
 html::-webkit-scrollbar {
   width: 1rem;
@@ -157,3 +157,5 @@ html::-webkit-scrollbar-thumb {
   transform: scale(1.1);
   /* color: var(--grey); */
 }
+
+/* review section */
