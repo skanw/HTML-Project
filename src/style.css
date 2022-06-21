@@ -184,6 +184,22 @@ html::-webkit-scrollbar-thumb {
     border:var(--border);
 }
 
+/*Newsletter section*/
+.newsletter{
+	background: red
+	
+}
+
+
+
+
+
+
+
+
+
+
+
 /* review section */
 .reviews .reviews-slider .box{
     width:30rem;
