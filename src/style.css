@@ -3,7 +3,7 @@
   --yellow: #ffce00;
   --grey: #58585b;
   --border: 0.1rem solid rgba(0, 0, 0, 0.1);
-  --border-hover: 0.1rem solid var(--grey);
+  --border-hover: 0.1rem solid #58585b;
   --box-shadow: 0 0.5rem 1 rem rgba(0, 0, 0, 0.1);
 }
 
@@ -138,6 +138,8 @@ html::-webkit-scrollbar-thumb {
   background: var(--grey);
 }
 
+/* bottom navigation bar */
+
 .bottom-nav-bar {
   text-align: center;
   background: var(--blue);
@@ -219,7 +221,7 @@ html::-webkit-scrollbar-thumb {
 /*login form .checkbox label class*/
 .login-form form .checkbox label {
   font-size: 1.5rem;
-  color: var(--light-color);
+  color: var(--grey);
   cursor: pointer;
 }
 /*button class*/
@@ -231,7 +233,7 @@ html::-webkit-scrollbar-thumb {
 /*paragaph class*/
 .login-form form p {
   padding-top: 0.8rem;
-  color: var(--light-color);
+  color: var(--grey);
   font-size: 1.5rem;
 }
 /*href class */
@@ -272,23 +274,23 @@ html::-webkit-scrollbar-thumb {
 
 .icon-bin .icon i {
   font-size: 3.5rem;
-  color: #005595;
+  color: var(--blue);
 }
 
 .icon-bin .icon h3 {
   font-size: 2.2rem;
-  color: #58585b;
+  color: var(--grey);
   padding-bottom: 0.5rem;
 }
 
 .icon-bin .icon p {
   font-size: 1.4rem;
-  color: #58585b;
+  color: var(--grey);
 }
 
 /*Newsletter section*/
 .newsletter {
-  background: #ffce00;
+  background: var(--yellow);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -303,7 +305,7 @@ html::-webkit-scrollbar-thumb {
 
 .newsletter form h3 {
   font-size: 2.2rem;
-  color: #005595;
+  color: var(--blue);
   padding-bottom: 0.7rem;
   font-weight: normal;
 }
@@ -336,14 +338,14 @@ html::-webkit-scrollbar-thumb {
   transform: translateY(-50%);
   width: 100%;
   height: 0.01rem;
-  background: #ffce00;
+  background: var(--yellow);
   z-index: -1;
 }
 
 .heading span {
   font-size: 3rem;
   padding: 0.5rem 2rem;
-  color: #005595;
+  color: var(--blue);
   background: white;
   border: var(--border);
 }
@@ -360,7 +362,7 @@ html::-webkit-scrollbar-thumb {
 .reviews .reviews-slider .box:hover {
   border: var(--border-hover);
   border-style: solid;
-  border-color: #ffce00;
+  border-color: var(--yellow);
 }
 
 .reviews .reviews-slider .box img {
@@ -370,13 +372,13 @@ html::-webkit-scrollbar-thumb {
 }
 
 .reviews .reviews-slider .box h3 {
-  color: #005595;
+  color: var(--blue);
   font-size: 26px;
   padding: 2px;
 }
 
 .reviews .reviews-slider .box p {
-  color: #58585b;
+  color: var(--grey);
   font-size: 16px;
   padding: 4px;
   line-height: 2;
@@ -388,5 +390,5 @@ html::-webkit-scrollbar-thumb {
 
 .reviews .reviews-slider .box .stars i {
   font-size: 12px;
-  color: #58585b;
+  color: var(--grey);
 }
