@@ -20,11 +20,11 @@ if (isset($message)) {
     <nav class="navbar">
       <!-- Discuss what should be in the admin navbar -->
 
-      <!-- <a href="admin_page.php">Home</a>
+      <a href="admin_page.php">Home</a>
       <a href="admin_products.php">products</a>
       <a href="admin_orders.php">orders</a>
       <a href="admin_users.php">Users</a>
-      <a href="admin_contacts.php">messages</a> -->
+      <a href="admin_contacts.php">messages</a>
     </nav>
 
     <div class="icons">
