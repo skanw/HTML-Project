@@ -38,10 +38,9 @@ if(isset($_GET['delete_all'])){
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>cart</title>
 
-   <!-- font awesome cdn link  -->
+   <!-- external css file -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-   <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -50,13 +49,13 @@ if(isset($_GET['delete_all'])){
 <?php include 'header.php'; ?>
 
 <div class="heading">
-   <h3>shopping cart</h3>
-   <p> <a href="home.php">home</a> / cart </p>
+   <h3>Shopping cart</h3>
+   <!--<p> <a href="home.php">home</a> / cart </p>-->
 </div>
 
 <section class="shopping-cart">
 
-   <h1 class="title">products added</h1>
+   <h1 class="title">Products In Cart</h1>
 
    <div class="box-container">
       <?php
@@ -81,20 +80,20 @@ if(isset($_GET['delete_all'])){
       $grand_total += $sub_total;
          }
       }else{
-         echo '<p class="empty">your cart is empty</p>';
+         echo '<p class="empty">Your cart is empty..</p>';
       }
       ?>
    </div>
 
    <div style="margin-top: 2rem; text-align:center;">
-      <a href="cart.php?delete_all" class="delete-btn <?php echo ($grand_total > 1)?'':'disabled'; ?>" onclick="return confirm('delete all from cart?');">delete all</a>
+      <a href="cart.php?delete_all" class="delete-btn <?php echo ($grand_total > 1)?'':'disabled'; ?>" onclick="return confirm('Clear cart?');">Clear cart</a>
    </div>
 
    <div class="cart-total">
-      <p>grand total : <span>$<?php echo $grand_total; ?>/-</span></p>
+      <p>Total price : <span>$<?php echo $grand_total; ?>/-</span></p>
       <div class="flex">
-         <a href="shop.php" class="option-btn">continue shopping</a>
-         <a href="checkout.php" class="btn <?php echo ($grand_total > 1)?'':'disabled'; ?>">proceed to checkout</a>
+         <a href="shop.php" class="option-btn">Click to continue shopping</a>
+         <a href="checkout.php" class="btn <?php echo ($grand_total > 1)?'':'disabled'; ?>">Proceed to checkout</a>
       </div>
    </div>
 

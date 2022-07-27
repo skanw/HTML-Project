@@ -92,6 +92,12 @@ section{
   font-size: 4rem;
 }
 
+.load-more{
+  margin-top: 2rem; 
+  text-align:center;
+  justify-content: center;
+}
+
 .btn,
 .option-btn,
 .delete-btn,
@@ -137,6 +143,7 @@ section{
   align-items: center;
   justify-content: center;
   gap:1rem;
+  /* change background image*/
   background: url(../images/heading-bg.webp) no-repeat;
   background-size: cover;
   background-position: center;
@@ -436,7 +443,7 @@ section{
 .about .flex .content{
   flex:1 1 40rem;
   padding:2rem;
-  background-color: var(--light-background);
+  /*background-color: var(--light-background);*/
 }
 
 .about .flex .content h3{
@@ -475,9 +482,9 @@ section{
   font-size: 1.7rem;
 }
 
-.reviews{
+/* .reviews{
   background-color: var(--light-background);
-}
+}*/
 
 .reviews .box-container{
   max-width: 1200px;

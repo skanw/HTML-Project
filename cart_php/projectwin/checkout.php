@@ -71,8 +71,8 @@ if(isset($_POST['order_btn'])){
 <?php include 'header.php'; ?>
 
 <div class="heading">
-   <h3>checkout</h3>
-   <p> <a href="home.php">home</a> / checkout </p>
+   <h3>Checkout page</h3>
+   <!--<p> <a href="home.php">home</a> / checkout </p>-->
 </div>
 
 <section class="display-order">
@@ -89,66 +89,67 @@ if(isset($_POST['order_btn'])){
    <?php
       }
    }else{
-      echo '<p class="empty">your cart is empty</p>';
+      echo '<p class="empty">Your cart is empty</p>';
    }
    ?>
-   <div class="grand-total"> grand total : <span>$<?php echo $grand_total; ?>/-</span> </div>
+   <div class="grand-total">Total price: <span>$<?php echo $grand_total; ?>/-</span> </div>
 
 </section>
 
 <section class="checkout">
 
    <form action="" method="post">
-      <h3>place your order</h3>
+      <h3>Checkout</h3>
       <div class="flex">
          <div class="inputBox">
-            <span>your name :</span>
-            <input type="text" name="name" required placeholder="enter your name">
+            <span>First name :</span>
+            <input type="text" name="name" required placeholder="enter your First name">
          </div>
          <div class="inputBox">
-            <span>your number :</span>
+            <span>Last name :</span>
+            <input type="text" name="name" required placeholder="enter your Last name">
+         </div>
+         <div class="inputBox">
+            <span>Phone number :</span>
             <input type="number" name="number" required placeholder="enter your number">
          </div>
          <div class="inputBox">
-            <span>your email :</span>
+            <span>Email address:</span>
             <input type="email" name="email" required placeholder="enter your email">
          </div>
          <div class="inputBox">
-            <span>payment method :</span>
+            <span>Payment method :</span>
             <select name="method">
-               <option value="cash on delivery">cash on delivery</option>
-               <option value="credit card">credit card</option>
-               <option value="paytm">debit card</option>
-               <option value="paypal">paypal</option>
+               <option value="credit card">Credit card</option>
+               <option value="paytm">Debit card</option>
+               <option value="paypal">Paypal</option>
                
             </select>
          </div>
          <div class="inputBox">
-            <span>address line 01 :</span>
-            <input type="number" min="0" name="flat" required >
-         </div>
-         <div class="inputBox">
-            <span>address line 02 :</span>
+            <span>Street address :</span>
             <input type="text" name="street" required >
          </div>
          <div class="inputBox">
-            <span>city :</span>
+            <span>City :</span>
             <input type="text" name="city" required >
          </div>
          <div class="inputBox">
-            <span>province :</span>
+            <span>Province :</span>
             <input type="text" name="state" required >
          </div>
          <div class="inputBox">
-            <span>country :</span>
+            <span>Country :</span>
             <input type="text" name="country" required >
          </div>
          <div class="inputBox">
-            <span>postal code :</span>
+            <span>Postal code :</span>
             <input type="text" name="pin_code" required >
          </div>
       </div>
-      <input type="submit" value="order now" class="btn" name="order_btn">
+      <div style="margin-top: 2rem; text-align:center">
+      <input type="submit" value="Place Order" class="btn" name="order_btn"> 
+   </div>
    </form>
 
 </section>

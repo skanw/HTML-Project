@@ -32,8 +32,8 @@ if(isset($_POST['send'])){
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
+    <head>
+        <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>contact</title>
@@ -43,41 +43,30 @@ if(isset($_POST['send'])){
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
 
-</head>
-<body>
-   
-<?php include 'header.php'; ?>
+        <?php include 'header.php'; ?>
 
-<div class="heading">
-   <h3>contact us</h3>
-   <p> <a href="home.php">home</a> / contact </p>
-</div>
-
-<section class="contact">
-
-   <form action="" method="post">
-      <h3>say something!</h3>
-      <input type="text" name="name" required placeholder="enter your name" class="box">
-      <input type="email" name="email" required placeholder="enter your email" class="box">
-      <input type="number" name="number" required placeholder="enter your number" class="box">
-      <textarea name="message" class="box" placeholder="enter your message" id="" cols="30" rows="10"></textarea>
-      <input type="submit" value="send message" name="send" class="btn">
-   </form>
-
-</section>
+        
+        <div class="heading">
+            <h3>Contact us</h3>
+        </div>
+        <section class="contact">
+            <form action="" method="post">
+                <input type="text" name="name" required placeholder="Enter your name: " class="box">
+                <input type="email" name="email" required placeholder="Enter your e-mail: " class="box">
+                <input type="number" name="number" required placeholder="Enter your number: " class="box">
+                <textarea name="message" class="box" placeholder="Enter your message: " id="" cols="30" rows="10"></textarea>
+                <input type="submit" name="send" value="send message" class="btn">
+            </form>
+        </section>
 
 
+        <?php include 'footer.php'; ?>
 
-
-
-
-
-
-<?php include 'footer.php'; ?>
-
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
-
-</body>
+        <!-- custom js file link  -->
+        <script src="js/script.js"></script>
+        
+    </body>
 </html>

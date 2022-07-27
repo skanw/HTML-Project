@@ -20,10 +20,10 @@ if(isset($_POST['add_to_cart'])){
    $check_cart_numbers = mysqli_query($conn, "SELECT * FROM `cart` WHERE name = '$product_name' AND user_id = '$user_id'") or die('query failed');
 
    if(mysqli_num_rows($check_cart_numbers) > 0){
-      $message[] = 'already added to cart!';
+      $message[] = 'Product is already in cart!';
    }else{
       mysqli_query($conn, "INSERT INTO `cart`(user_id, name, price, quantity, image) VALUES('$user_id', '$product_name', '$product_price', '$product_quantity', '$product_image')") or die('query failed');
-      $message[] = 'product added to cart!';
+      $message[] = 'Product added to cart!';
    }
 
 };
@@ -50,14 +50,14 @@ if(isset($_POST['add_to_cart'])){
 <?php include 'header.php'; ?>
 
 <div class="heading">
-   <h3>search page</h3>
-   <p> <a href="home.php">home</a> / search </p>
+   <h3>Search page</h3>
+  <!-- <p> <a href="home.php">home</a> / search </p> -->
 </div>
 
 <section class="search-form">
    <form action="" method="post">
-      <input type="text" name="search" placeholder="search products..." class="box">
-      <input type="submit" name="submit" value="search" class="btn">
+      <input type="text" name="search" placeholder="Search for a product" class="box">
+      <input type="submit" name="submit" value="Search" class="btn">
    </form>
 </section>
 
@@ -84,10 +84,10 @@ if(isset($_POST['add_to_cart'])){
    <?php
             }
          }else{
-            echo '<p class="empty">no result found!</p>';
+            echo '<p class="empty">No result found!</p>';
          }
       }else{
-         echo '<p class="empty">search something!</p>';
+         echo '<p class="empty">Search!</p>';
       }
    ?>
    </div>

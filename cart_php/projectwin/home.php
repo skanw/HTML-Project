@@ -36,12 +36,19 @@ if(isset($_POST['add_to_cart'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>home</title>
+   <meta name="keywords" content="book home page">
+   <meta name="keywords" content="bookstore">
+   <meta name="keywords" content="home of free books">
+   <meta name="keywords" content="free books available">
+   <meta name="keywords" content="fictional bookstore">
+   <meta name="description" content="project team 11 home page">
+   <meta name="authors" content="Ade Oyefeso, Dayo Akerele, simran simran, Suraj Kanwar, Alex Biru">
+   <title>Home page</title>
 
-   <!-- font awesome cdn link  -->
+   <!-- external css -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-   <!-- custom css file link  -->
+   <!-- css file link  -->
    <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -52,16 +59,16 @@ if(isset($_POST['add_to_cart'])){
 <section class="home">
 
    <div class="content">
-      <h3>Hand Picked Book to your door.</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quod? Reiciendis ut porro iste totam.</p>
-      <a href="about.php" class="white-btn">discover more</a>
+      <h3>Catalogue of ficticious books available for your selection</h3>
+      <p>All books are affordable and high quality from different genres and categories.  </p>
+      <a href="about.php" class="white-btn">Learn more.</a>
    </div>
 
 </section>
 
 <section class="products">
 
-   <h1 class="title">latest products</h1>
+   <h1 class="title">Latest products</h1>
 
    <div class="box-container">
 
@@ -83,13 +90,13 @@ if(isset($_POST['add_to_cart'])){
       <?php
          }
       }else{
-         echo '<p class="empty">no products added yet!</p>';
+         echo '<p class="empty">No products available yet!</p>';
       }
       ?>
    </div>
 
    <div class="load-more" style="margin-top: 2rem; text-align:center">
-      <a href="shop.php" class="option-btn">load more</a>
+      <a href="shop.php" class="option-btn">See more products</a>
    </div>
 
 </section>
@@ -99,13 +106,14 @@ if(isset($_POST['add_to_cart'])){
    <div class="flex">
 
       <div class="image">
-         <img src="images/about-img.jpg" alt="">
+         <!--Change image -->
+         <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Catherine_M._Wood_Old_books.jpg" alt="WinBooks" height="400" width="">
       </div>
 
       <div class="content">
-         <h3>about us</h3>
-         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit quos enim minima ipsa dicta officia corporis ratione saepe sed adipisci?</p>
-         <a href="about.php" class="btn">read more</a>
+         <h3>About us</h3>
+         <p>Group of 5 students from team 11 creating a ficticious bookstore with cheap and affordable prices on several different products. </p>
+         <a href="about.php" class="btn">Read more</a>
       </div>
 
    </div>
@@ -115,15 +123,11 @@ if(isset($_POST['add_to_cart'])){
 <section class="home-contact">
 
    <div class="content">
-      <h3>have any questions?</h3>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque cumque exercitationem repellendus, amet ullam voluptatibus?</p>
-      <a href="contact.php" class="white-btn">contact us</a>
+      <h3>Have any questions?</h3>
+      <a href="contact.php" class="white-btn">Contact us here!</a>
    </div>
 
 </section>
-
-
-
 
 
 <?php include 'footer.php'; ?>
