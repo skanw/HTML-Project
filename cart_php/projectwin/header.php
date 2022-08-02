@@ -16,15 +16,19 @@ if(isset($message)){
    <div class="header-1">
       <div class="flex">
          <div class="share">
-            <a href="https://github.com/skanw/HTML-Project" class="fab fa-github"></a>            
+            <a href="https://github.com/skanw/HTML-Project" class="fab fa-github"></a>
+            <?php include 'theme.php'; ?>           
          </div>
+         
+         
          <p><a href="login.php">Login</a> | <a href="register.php">Register</a> </p>
       </div>
    </div>
 
    <div class="header-2">
       <div class="flex">
-         <a href="home.php" class="logo">WinBooks.</a>
+      
+         <a href="home.php" class="logo"><img src = "images/image.png"></a>
 
          <nav class="navbar">
             <a href="home.php">Home</a>
@@ -36,7 +40,7 @@ if(isset($message)){
 
          <div class="icons">
             <!--3 lined bar wont show -->
-            <!--<div id="menu-btn" class="fas fa-bars"></div>-->
+            <div id="menu-btn" class="fas fa-bars"></div>
             <a href="search_page.php" class="fas fa-search"></a>
             <div id="user-btn" class="fas fa-user"></div>
             <?php

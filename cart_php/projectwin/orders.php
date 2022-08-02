@@ -24,7 +24,7 @@ if(!isset($user_id)){
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
+   <link id= "themeStylesheet" rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
@@ -49,7 +49,8 @@ if(!isset($user_id)){
       ?>
       <div class="box">
          <p> Placed on : <span><?php echo $fetch_orders['placed_on']; ?></span> </p>
-         <p> Name : <span><?php echo $fetch_orders['name']; ?></span> </p>
+         <p> First Name : <span><?php echo $fetch_orders['name']; ?></span> </p>
+         <p> Last Name : <span><?php echo $fetch_orders['lname']; ?></span> </p>
          <p> Number : <span><?php echo $fetch_orders['number']; ?></span> </p>
          <p> Email : <span><?php echo $fetch_orders['email']; ?></span> </p>
          <p> Address : <span><?php echo $fetch_orders['address']; ?></span> </p>

@@ -247,6 +247,7 @@ section{
 .dashboard .box-container{
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+   
    gap:1.5rem;
    max-width: 1200px;
    margin:0 auto;
@@ -256,7 +257,9 @@ section{
 .dashboard .box-container .box{
    border-radius: .5rem;
    padding:2rem;
-   background-color: var(--white);
+   /* background-color: var(--white); */
+   background-color: #333;
+   
    box-shadow: var(--box-shadow);
    border:var(--border);
    text-align: center;
@@ -264,7 +267,8 @@ section{
 
 .dashboard .box-container .box h3{
    font-size: 5rem;
-   color:var(--black); 
+   /* color:var(--black);  */
+   color: #f5f5f5;
 }
 
 .dashboard .box-container .box p{

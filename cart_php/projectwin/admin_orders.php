@@ -59,7 +59,8 @@ if(isset($_GET['delete'])){
       <div class="box">
          <p> user id : <span><?php echo $fetch_orders['user_id']; ?></span> </p>
          <p> placed on : <span><?php echo $fetch_orders['placed_on']; ?></span> </p>
-         <p> name : <span><?php echo $fetch_orders['name']; ?></span> </p>
+         <p> First name : <span><?php echo $fetch_orders['name']; ?></span> </p>
+         <p> Last name : <span><?php echo $fetch_orders['lname']; ?></span> </p>
          <p> number : <span><?php echo $fetch_orders['number']; ?></span> </p>
          <p> email : <span><?php echo $fetch_orders['email']; ?></span> </p>
          <p> address : <span><?php echo $fetch_orders['address']; ?></span> </p>

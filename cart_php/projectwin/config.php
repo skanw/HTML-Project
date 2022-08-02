@@ -1,5 +1,7 @@
 <?php
 
-$conn = mysqli_connect('localhost', 'root', '', 'winbooks') or die('connection failed');
+$conn = mysqli_connect('localhost', 'root', '', 'winbooks1') or die('connection failed');
+
+
 
 ?>

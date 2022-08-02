@@ -24,7 +24,7 @@ if(!isset($user_id)){
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
+   <link id= "themeStylesheet" rel="stylesheet" href="css/style.css">
 
     </head>
     <body>
@@ -39,9 +39,9 @@ if(!isset($user_id)){
                 </div>
                 <div class="content">
                     <h3>About us</h3>
-                    <p>WinBooks is an open-source library for STEM related e-books. All e-books are free of cost! <br>
-                        Users can download the books or read them online. People can have conversations under every page of the book, 
-                        and they can also rate the books. <br> Users can keep track of their books and organize them in their profile. </p>
+                    <p>WinBooks is an online ecommerce bookstore with various books from different genres. <br>
+                        Users can view a book of their choice and decide to buy it if they please as we offer several methods of payment and delivery services. 
+                          <br> You can keep track of your books and orders, as well as organize them in your profile. You are welcome to leave a review of the site or contact us about any issues you may have with the contact us page </p>
                     <a href="contact.php" class="btn">Contact us</a>
                 </div>
             </div>
@@ -51,7 +51,7 @@ if(!isset($user_id)){
             <div class="box-container">
                 <div class="box">
                     <img src="images/image1.jpg" alt="img1">
-                    <p>Amazing website!</p>
+                    <p>Extremely polished website design!</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -64,7 +64,7 @@ if(!isset($user_id)){
 
                 <div class="box">
                     <img src="images/image2.jpg" alt="img2">
-                    <p>WinBooks provides lots of text books for free! I saved so much money!</p>
+                    <p>WinBooks provides books at very affordable prices!</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -90,7 +90,7 @@ if(!isset($user_id)){
 
                 <div class="box">
                     <img src="images/image4.jpg" alt="img4">
-                    <p>The website is easy to navigate and they have a lot of important books.</p>
+                    <p>The website is easy to navigate!</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -103,7 +103,7 @@ if(!isset($user_id)){
 
                 <div class="box">
                     <img src="images/image5.jpg" alt="img5">
-                    <p>Great website for students in STEM!</p>
+                    <p>Seameless checkout process!</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>

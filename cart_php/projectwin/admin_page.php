@@ -35,7 +35,7 @@ if(!isset($admin_id)){
 
 <section class="dashboard">
 
-   <h1 class="title">dashboard</h1>
+   <h1 class="title">Admin Dashboard</h1>
 
    <div class="box-container">
 
@@ -51,7 +51,7 @@ if(!isset($admin_id)){
             };
          ?>
          <h3>$<?php echo $total_pendings; ?>/-</h3>
-         <p>total pendings</p>
+         <p>Pending Order Totals</p>
       </div>
 
       <div class="box">
@@ -66,7 +66,7 @@ if(!isset($admin_id)){
             };
          ?>
          <h3>$<?php echo $total_completed; ?>/-</h3>
-         <p>completed payments</p>
+         <p>Completed payments</p>
       </div>
 
       <div class="box">
@@ -93,7 +93,7 @@ if(!isset($admin_id)){
             $number_of_users = mysqli_num_rows($select_users);
          ?>
          <h3><?php echo $number_of_users; ?></h3>
-         <p>normal users</p>
+         <p>Registered users</p>
       </div>
 
       <div class="box">
@@ -102,7 +102,7 @@ if(!isset($admin_id)){
             $number_of_admins = mysqli_num_rows($select_admins);
          ?>
          <h3><?php echo $number_of_admins; ?></h3>
-         <p>admin users</p>
+         <p>Admin users</p>
       </div>
 
       <div class="box">
@@ -111,7 +111,7 @@ if(!isset($admin_id)){
             $number_of_account = mysqli_num_rows($select_account);
          ?>
          <h3><?php echo $number_of_account; ?></h3>
-         <p>total accounts</p>
+         <p>Total accounts</p>
       </div>
 
       <div class="box">
@@ -120,7 +120,7 @@ if(!isset($admin_id)){
             $number_of_messages = mysqli_num_rows($select_messages);
          ?>
          <h3><?php echo $number_of_messages; ?></h3>
-         <p>new messages</p>
+         <p>New messages</p>
       </div>
 
    </div>

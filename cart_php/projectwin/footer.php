@@ -4,10 +4,11 @@
 
       <div class="box">
          <h3>quick links</h3>
-         <a href="home.php">home</a>
-         <a href="about.php">about</a>
-         <a href="shop.php">shop</a>
-         <a href="contact.php">contact</a>
+         <a href="home.php">Home</a>
+         <a href="about.php">About</a>
+         <a href="shop.php">Products</a>
+         <a href="contact.php">Contact</a>
+         <a href="faq.php">FAQ</a>
       </div>
 
       <div class="box">

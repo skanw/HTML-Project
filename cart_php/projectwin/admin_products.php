@@ -104,7 +104,7 @@ if(isset($_POST['update_product'])){
    <h1 class="title">shop products</h1>
 
    <form action="" method="post" enctype="multipart/form-data">
-      <h3>add product</h3>
+      <h3>Add product</h3>
       <input type="text" name="name" class="box" placeholder="enter product name" required>
       <input type="number" min="0" name="price" class="box" placeholder="enter product price" required>
       <input type="file" name="image" accept="image/jpg, image/jpeg, image/png" class="box" required>
