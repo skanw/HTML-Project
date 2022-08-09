@@ -1,4 +1,0 @@
-blue 005595
-yellow FFCE00
-grey 58585B
-light grey C9CAC8
