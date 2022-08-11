@@ -41,6 +41,12 @@ if (isset($_POST['submit'])) {
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="book home page">
+   <meta name="keywords" content="bookstore">
+   <meta name="keywords" content="home of free books">
+   <meta name="keywords" content="free books available">
+   <meta name="keywords" content="fictional bookstore">
+   <meta name="authors" content="Ade Oyefeso, Dayo Akerele, simran simran, Suraj Kanwar, Alex Biru">
   <title>Login Form</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
